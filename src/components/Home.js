@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
 
 const Home = () => {
@@ -16,15 +17,26 @@ const Home = () => {
   };
   return (
     <>
-      <div className="p-4 box mt-3 text-center">
-        Hello Welcome <br />
+      <div className="wtitle">
+        Welcome <br />
         {user && user.email}
       </div>
+
+      <Link to = "/create" >
       <div className="d-grid gap-2">
+        <Button className="createbutton">
+          Create a Poll
+        </Button>
+      </div>
+      </Link>
+
+      
+      {/* <div className="d-grid gap-2">
         <Button variant="primary" onClick={handleLogout}>
           Log out
         </Button>
-      </div>
+      </div> */}
+
     </>
   );
 };

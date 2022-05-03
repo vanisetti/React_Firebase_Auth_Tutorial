@@ -6,6 +6,9 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
+import PhoneSignup from "./components/PhoneSignup";
+import Create from "./components/Create";
+import ShareCode from "./components/ShareCode";
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
               />
               <Route path="/" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
+              <Route path="/phonesignup" element={<PhoneSignup />} />
+              <Route path="/create" element={<Create />} />
+              <Route path="/sharecode" element={<ShareCode />} />
             </Routes>
           </UserAuthContextProvider>
         </Col>
