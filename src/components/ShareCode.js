@@ -26,8 +26,7 @@ const ShareCode = () => {
       <>
       
         <div className="qrtitle">
-          Share QR Code <br />
-          {user && user.email}
+          Share QR Code 
         </div>
 
         <div style={{ background: 'white', paddingTop: '16px', paddingBottom: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius:'10px', width: '350px'}}>

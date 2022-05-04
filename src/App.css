@@ -25,9 +25,9 @@ body {
   height: 38px !important;
 }
 
-.cumulative{
+/* .cumulative{
   background-color: none;
-}
+} */
 
 .buttons{
   background-color: #3D4F72;
@@ -38,6 +38,10 @@ body {
   font-size: larger;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+}
+
+.buttons:hover{
+  background-color: #F49E5F;
 }
 
 .qrtitle{
@@ -57,12 +61,12 @@ body {
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  width: 350px;
   color: #E5E5E5;
   text-shadow: 2px 2px #2d3039;
   margin-bottom: 40px ;
   
 }
+
 
 .labelprompt{
   text-align: center;
@@ -79,7 +83,7 @@ border-radius: 10px;
 }
 
 .createbutton{
-  background-color: #E5E5E5;
+  background-color: #3D4F72;
   border: none;
   width: 350px;
   height: 50px;
@@ -88,7 +92,9 @@ border-radius: 10px;
   padding-bottom: 50px;
   font-size: 200%;
   font-family: 'Lato', sans-serif;
-  text-align: center;
   font-weight: 500;
-  color: #3D4F72;
+}
+
+.createbutton:hover{
+  background-color: #F49E5F;
 }

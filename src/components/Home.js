@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
+import backgroundimage from "../images/background.png";
 
 const Home = () => {
   const { logOut, user } = useUserAuth();
@@ -18,19 +19,19 @@ const Home = () => {
   return (
     <>
       <div className="wtitle">
-        Welcome <br />
-        {user && user.email}
+        Welcome 
+        {/* <br />
+        {user && user.email} */}
       </div>
 
       <Link to = "/create" >
-      <div className="d-grid gap-2">
+      <div className="cumulative">
         <Button className="createbutton">
           Create a Poll
         </Button>
       </div>
       </Link>
 
-      
       {/* <div className="d-grid gap-2">
         <Button variant="primary" onClick={handleLogout}>
           Log out

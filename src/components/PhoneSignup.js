@@ -5,6 +5,7 @@ import PhoneInput from 'react-phone-number-input'
 import { Form, Alert } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { useUserAuth } from "../context/UserAuthContext";
+import backgroundimage from "../images/background.png";
 
 
 const PhoneSignup = () =>{
@@ -47,7 +48,7 @@ const PhoneSignup = () =>{
 
     return(
         <>
-        <div className="p-4 box">
+        <div className="p-4 box" >
           <h2 className="mb-3">Firebase Auth Login</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={getOtp} style ={{display: !flag? "block":"none"}}>
@@ -88,6 +89,7 @@ const PhoneSignup = () =>{
             </div>
             </Form>
             </div>
+
             </>
     );
 };

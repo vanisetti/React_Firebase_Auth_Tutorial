@@ -9,6 +9,11 @@ import { UserAuthContextProvider } from "./context/UserAuthContext";
 import PhoneSignup from "./components/PhoneSignup";
 import Create from "./components/Create";
 import ShareCode from "./components/ShareCode";
+import backgroundimage from "./images/background.png";
+import Poll from './components/Poll';
+import Auth from './components/Auth';
+import UserProvider from './context/UserProvider';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
